@@ -114,7 +114,7 @@ export function BentoGrid() {
 
       {/* GitHub Activity */}
       <div className="col-span-1 md:col-span-2">
-        <GithubActivityCard username="yourusername" />
+        <GithubActivityCard username="JoseGu1llardi" />
       </div>
     </div>
   )
