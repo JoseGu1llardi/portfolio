@@ -36,7 +36,7 @@ pnpm dev
 Visit http://localhost:3000.
 
 ## Environment variables
-No required external secrets in this boilerplate. If you add any, place them in `.env.local` (already git-ignored).
+- Optional: `NEXT_PUBLIC_GITHUB_TOKEN` to raise GitHub API rate limits for the activity card. Generate a classic token with public scopes only and place it in `.env.local` (already git-ignored).
 
 ## Customize before publishing
 - `components/hero-section.tsx`: update name, handle, and `techStack`.
