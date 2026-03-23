@@ -1,5 +1,8 @@
+"use client"
+
 import { BentoCard } from "./bento-card"
 import { GithubActivityCard } from "./github-activity-card"
+import { useLanguage } from "@/hooks/use-language"
 import {
   Folder,
   User,
@@ -14,12 +17,14 @@ import {
 } from "lucide-react"
 
 export function BentoGrid() {
+  const { t } = useLanguage()
+
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
       {/* Projects - Large card */}
       <BentoCard
-        title="Projects"
-        description="Explore my recent projects"
+        title={t.bento.projects.title}
+        description={t.bento.projects.description}
         icon={<Folder className="h-5 w-5" />}
         href="/projects"
         className="md:col-span-2"
@@ -27,8 +32,8 @@ export function BentoGrid() {
 
       {/* About */}
       <BentoCard
-        title="About"
-        description="Get to know my journey and story"
+        title={t.bento.about.title}
+        description={t.bento.about.description}
         icon={<User className="h-5 w-5" />}
         href="/about"
         className="md:col-span-2"
@@ -36,40 +41,40 @@ export function BentoGrid() {
 
       {/* Contact */}
       <BentoCard
-        title="Contact"
-        description="Let's talk"
+        title={t.bento.contact.title}
+        description={t.bento.contact.description}
         icon={<Mail className="h-5 w-5" />}
         href="/contact"
       />
 
       {/* Setup */}
       <BentoCard
-        title="Setup"
-        description="Tech stack & gear"
+        title={t.bento.setup.title}
+        description={t.bento.setup.description}
         icon={<Monitor className="h-5 w-5" />}
         href="/setup"
       />
 
       {/* Blog */}
       <BentoCard
-        title="Blog"
-        description="Articles & thoughts"
+        title={t.bento.blog.title}
+        description={t.bento.blog.description}
         icon={<BookOpen className="h-5 w-5" />}
         href="/blog"
       />
 
       {/* Media Kit */}
       <BentoCard
-        title="Media Kit"
-        description="Information for partners and collaborators"
+        title={t.bento.mediaKit.title}
+        description={t.bento.mediaKit.description}
         icon={<FileText className="h-5 w-5" />}
         href="/media-kit"
       />
 
       {/* Changelog */}
       <BentoCard
-        title="Changelog"
-        description="Updates and improvements"
+        title={t.bento.changelog.title}
+        description={t.bento.changelog.description}
         icon={<History className="h-5 w-5" />}
         href="/changelog"
       />

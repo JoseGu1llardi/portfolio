@@ -1,16 +1,20 @@
+"use client"
+
 import { TechBadge } from "./tech-badge";
 import { Sparkles } from "lucide-react";
+import { useLanguage } from "@/hooks/use-language";
 
 export function HeroSection() {
+  const { t } = useLanguage();
   const techStack = ["Java", "Spring Boot", "PostgreSQL", "Docker"];
 
   return (
     <div className="rounded-2xl bg-card border border-border p-5 md:p-6">
-      {/* Tech Creator Badge */}
+      {/* Role Badge */}
       <div className="mb-4">
         <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-foreground">
           <Sparkles className="h-3 w-3" />
-          Back-end Developer
+          {t.hero.role}
         </span>
       </div>
 
@@ -24,8 +28,7 @@ export function HeroSection() {
 
       {/* Description */}
       <p className="mt-3 max-w-xl text-sm text-muted-foreground">
-        Back-end Developer & Content Creator passionate about building great
-        digital experiences.
+        {t.hero.description}
       </p>
 
       {/* Tech Stack */}

@@ -4,8 +4,10 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Mail } from "lucide-react"
+import { useLanguage } from "@/hooks/use-language"
 
 export function NewsletterCard() {
+  const { t } = useLanguage()
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
 
@@ -28,26 +30,31 @@ export function NewsletterCard() {
           <Mail className="h-5 w-5" />
         </div>
         <div>
-          <h3 className="font-medium text-foreground">Newsletter</h3>
-          <p className="text-sm text-muted-foreground">Get updates in your inbox</p>
+          <h3 className="font-medium text-foreground">{t.newsletter.title}</h3>
+          <p className="text-sm text-muted-foreground">{t.newsletter.subtitle}</p>
         </div>
       </div>
       <form onSubmit={handleSubmit} className="flex gap-2">
         <Input
           type="email"
-          placeholder="your@email.com"
+          placeholder={t.newsletter.placeholder}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="flex-1 bg-secondary border-border"
           disabled={status === "loading"}
         />
         <Button type="submit" disabled={status === "loading"}>
-          {status === "loading" ? "..." : status === "success" ? "Done!" : "Subscribe"}
+          {status === "loading"
+            ? t.newsletter.button.loading
+            : status === "success"
+            ? t.newsletter.button.success
+            : t.newsletter.button.idle}
         </Button>
       </form>
       {status === "success" && (
-        <p className="mt-2 text-sm text-emerald-400">Thanks for subscribing!</p>
+        <p className="mt-2 text-sm text-emerald-400">{t.newsletter.successMessage}</p>
       )}
     </div>
   )
 }
+
