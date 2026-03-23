@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "role": "Desenvolvedor Back-end",
+    "description": "Desenvolvedor Back-end & Criador de Conteúdo apaixonado por construir ótimas experiências digitais."
+  },
+  "bento": {
+    "projects": {
+      "title": "Projetos",
+      "description": "Explore meus projetos recentes"
+    },
+    "about": {
+      "title": "Sobre",
+      "description": "Conheça minha trajetória e história"
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Vamos conversar"
+    },
+    "setup": {
+      "title": "Setup",
+      "description": "Stack de tecnologias & equipamentos"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Artigos & reflexões"
+    },
+    "mediaKit": {
+      "title": "Media Kit",
+      "description": "Informações para parceiros e colaboradores"
+    },
+    "changelog": {
+      "title": "Changelog",
+      "description": "Atualizações e melhorias"
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "subtitle": "Receba atualizações na sua caixa de entrada",
+    "placeholder": "seu@email.com",
+    "button": {
+      "idle": "Assinar",
+      "loading": "...",
+      "success": "Pronto!"
+    },
+    "successMessage": "Obrigado por assinar!"
+  },
+  "languageToggle": {
+    "switchTo": "Switch to English"
+  }
+}
