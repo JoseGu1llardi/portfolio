@@ -46,5 +46,15 @@
   },
   "languageToggle": {
     "switchTo": "Switch to English"
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "subtitle": "Uma coleção dos meus trabalhos recentes e projetos pessoais",
+    "viewProject": "Ver Projeto",
+    "comingSoon": "Em breve",
+    "noDescription": "Sem descrição.",
+    "loading": "Carregando projetos...",
+    "error": "Falha ao carregar projetos. Tente novamente mais tarde.",
+    "back": "Voltar"
   }
 }

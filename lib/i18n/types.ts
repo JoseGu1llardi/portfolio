@@ -28,4 +28,14 @@ export interface Translations {
   languageToggle: {
     switchTo: string
   }
+  projects: {
+    title: string
+    subtitle: string
+    viewProject: string
+    comingSoon: string
+    noDescription: string
+    loading: string
+    error: string
+    back: string
+  }
 }

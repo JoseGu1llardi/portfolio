@@ -46,5 +46,15 @@
   },
   "languageToggle": {
     "switchTo": "Switch to Portuguese"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A collection of my recent work and personal projects",
+    "viewProject": "View Project",
+    "comingSoon": "Coming soon",
+    "noDescription": "No description provided.",
+    "loading": "Loading projects...",
+    "error": "Failed to load projects. Please try again later.",
+    "back": "Back"
   }
 }
